@@ -6,33 +6,33 @@
 
 body {
   font-family: "Muli", sans-serif;
-  overflow: hidden;
-  margin: 0;
   background-color: dodgerblue;
-  height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  display: flex;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  width: 100%;
-  display: flex;
   padding: 0 20px;
+  display: flex;
+  width: 100%;
 }
 
 .slide {
-  height: 80vh;
+  transition: all 500ms ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: 20px;
-  margin: 10px;
+  position: relative;
   cursor: pointer;
   color: black;
+  height: 80vh;
+  margin: 10px;
   flex: 1;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  transition: all 500ms ease-in-out;
 }
 
 .slide h3 {
@@ -40,8 +40,8 @@ body {
   font-size: 24px;
   bottom: 20px;
   left: 20px;
-  margin: 0;
   opacity: 0;
+  margin: 0;
 }
 
 .slide.active {
@@ -49,6 +49,6 @@ body {
 }
 
 .slide.active h3 {
-  opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
+  opacity: 1;
 }
